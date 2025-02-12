@@ -16,6 +16,7 @@ export class PointerSize {
 
   constructor(public size = 4, value: number | BigInt) {
     this.value = typeof value === "bigint" ? value & BigInt(0xffffffffffffffff) : (value as number) & 0xffffff;
+    this.size = typeof value === "bigint" ? 8 : 4;
   }
 }
 
