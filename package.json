@@ -1,0 +1,30 @@
+{
+  "name": "n-enet",
+  "version": "0.0.1-alpha",
+  "description": "Transpiled ENet library to Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "rimraf dist && nr build && node test/test.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": {
+    "name": "JadlionHD",
+    "email": "jadlion.dev@gmail.com",
+    "url": "https://jad.li"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/ni": "^23.3.1",
+    "@hono/node-server": "^1.13.8",
+    "@types/node": "^22.13.1",
+    "hono": "^4.7.0",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=7.0.0"
+  }
+}
